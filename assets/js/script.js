@@ -94,7 +94,7 @@ function buyButtonClicked() {
     var quantity = cartBox.getElementsByClassName("cart-quantity")[0].value;
     var sugarOption = cartBox
       .getElementsByClassName("cart-sugar-option")[0]
-      .innerText.replace("Size: ", ""); // Get sugar option
+      .innerText.replace("Option: ", ""); // Get sugar option
     var priceValue = parseFloat(price.replace("₱", "").replace(",", ""));
     var subtotalAmount = priceValue * quantity;
     orderDetails.push({
@@ -218,7 +218,7 @@ function addProductToCart(title, price, productImg, size) {
         <div class="detail-box">
             <div class="cart-product-title">${title}</div>
             <div class="cart-price">${price}</div>
-            <div class="cart-sugar-option">Size: ${size}</div>
+            <div class="cart-sugar-option">Option: ${size}</div>
             <input type="number" value="1" min="1" class="cart-quantity">
         </div>
         <!-- REMOVE BUTTON -->
