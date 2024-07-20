@@ -31,7 +31,7 @@ include("auth_session.php");
     <!-- HEADER SECTION -->
     <header class="header">
         <a href="#" class="logo">
-            <img src="../assets/images/logo.png" class="img-logo" alt="KapeTann Logo">
+            <img src="../assets/images/cafe_logo1.png" class="img-logo" alt="KapeTann Logo">
         </a>
 
         <!-- MAIN MENU FOR SMALLER DEVICES -->
@@ -88,7 +88,7 @@ include("auth_session.php");
     <!-- HERO SECTION -->
     <section class="home" id="home">
         <div class="content">
-            <h3>Welcome to KapeTann Coffee Shop, <?php echo $_SESSION['username']; ?>!</h3>
+            <h3>Welcome <?php echo $_SESSION['username']; ?>!</h3>
             <a href="#menu" class="btn btn-dark text-decoration-none">Order Now!</a>
         </div>
     </section>
@@ -101,23 +101,22 @@ include("auth_session.php");
                 <img src="../assets/images/about-img.png" alt="" class="img-fluid">
             </div>
             <div class="content">
-                <h3>Welcome to KapeTann!</h3>
+                <h3>Welcome your virtual coffee shop</h3>
                 <p>
-                    At KapeTann Coffee Shop, we are passionate about coffee and believe
-                    that every cup tells a story. We are a cozy coffee shop located
-                    in the heart of the city, dedicated to providing an exceptional
-                    coffee experience to our customers. Our love for coffee has led
-                    us on a voyage of exploration and discovery, as we travel the
-                    world in search of the finest coffee beans, carefully roasted
-                    and brewed to perfection.
+                Welcome to The Virtual Coffee Shop, where our passion for coffee fuels 
+                every cup we brew. We are committed to bringing you the finest coffee experience, 
+                carefully sourcing the best beans from around the world. Our expert roasters 
+                ensure that each batch is roasted to perfection, capturing the unique flavors 
+                and aromas of each origin. At The Virtual Coffee Shop, we believe that coffee is more than 
+                just a beverage; it's a journey of discovery and delight.
                 </p>
                 <p>
-                    But coffee is not just a drink, it's an experience. Our warm and
-                    inviting atmosphere at KapeTann is designed to be a haven
-                    for coffee lovers, where they can relax, connect, and embark
-                    on their own coffee voyages.
+                 In our virtual space, we aim to recreate the cozy, inviting atmosphere of a traditional coffee shop.
+                 Whether you're starting your day, taking a break, or connecting with friends, The Virtual Coffee Shop
+                 is your go-to destination for exceptional coffee and community. Join us in exploring the rich, 
+                 diverse world of coffee from the comfort of your own home.
                 </p>
-                <a href="#" class="btn btn-dark text-decoration-none">Learn More</a>
+
             </div>
         </div>
     </section>
@@ -219,7 +218,9 @@ include("auth_session.php");
         <section class="footer">
             <div class="footer-container">
                 <div class="logo">
-                    <img src="../assets/images/logo.png" class="img"><br />
+                    <img src="../assets/images/cafe_logo1.png" class="img"><br />
+                </div>
+                <div class="footer-text">
                     <i class="fas fa-envelope"></i>
                     <p>abfiguerrez18@gmail.com</p><br />
                     <i class="fas fa-phone"></i>

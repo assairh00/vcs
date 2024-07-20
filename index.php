@@ -33,7 +33,7 @@
         <!-- HEADER SECTION -->
         <header class="header">
             <a href="#" class="logo">
-                <img src="assets/images/logo.png" class="img-logo" alt="KapeTann Logo">
+                <img src="assets/images/cafe_logo1.png" class="img-logo" alt="KapeTann Logo">
             </a>
 
             <!-- MAIN MENU FOR SMALLER DEVICES -->
@@ -80,7 +80,7 @@
         <!-- HERO SECTION -->
         <section class="home" id="home">
             <div class="content">
-                <h3>Welcome to KapeTann Coffee Shop, mga kap!</h3>
+                <h3>Brewed to Perfection, Savored Anywhere</h3>
                 <a href="#menu" class="btn btn-dark text-decoration-none">Order Now!</a>
             </div>
         </section>
@@ -315,7 +315,7 @@
         <section class="footer">
             <div class="footer-container">
                 <div class="logo">
-                    <img src="assets/images/logo.png" class="img"><br />
+                    <img src="assets/images/cafe_logo1.png" class="img"><br />
                     <i class="fas fa-envelope"></i>
                     <p>abfiguerrez18@gmail.com</p><br />
                     <i class="fas fa-phone"></i>
