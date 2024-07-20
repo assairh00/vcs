@@ -1,5 +1,5 @@
 <?php
-//include auth_session.php file on all user panel pages
+session_start();
 include("auth_session.php");
 ?>
 
@@ -62,6 +62,18 @@ include("auth_session.php");
         <div class="cart">
     <h2 class="cart-title">Your Cart:</h2>
     <div class="cart-content">
+    <?php
+    if (!empty($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $item) {
+            echo '<div class="cart-item">';
+            echo '<span class="item-title">' . htmlspecialchars($item['title']) . '</span>';
+            echo '<span class="item-price">' . htmlspecialchars($item['price']) . '</span>';
+            echo '</div>';
+        }
+    } else {
+        echo '<p></p>';
+    }
+    ?>
     </div>
     <div class="total">
         <div class="total-title">Total: </div>
@@ -199,89 +211,7 @@ include("auth_session.php");
         </div>
     </div>
 </section>
-<br />
-                <div class="row row-to-hide">
-                    <div class="col-md-4">
-                        <div class="box">
-                            <img src="../assets/images/cart-item-7.png" alt="" class="product-img">
-                            <h3 class="product-title">Iced Americano </h3>
-                            <div class="price">₱35.00</div>
-                            <select class="form-select size-select mb-2">
-                                <option value="small">Small (8 oz)</option>
-                                <option value="medium" selected>Medium </option>
-                                <option value="large">Large (16 oz)</option>
-                            </select>
-                            <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                        </div>
-                    </div><br />
-                    <div class="col-md-4">
-                        <div class="box">
-                            <img src="../assets/images/cart-item-8.png" alt="" class="product-img">
-                            <h3 class="product-title">Specialty Brews </h3>
-                            <div class="price">₱85.00</div>
-                            <select class="form-select size-select mb-2">
-                                <option value="small">Small (8 oz)</option>
-                                <option value="medium" selected>Medium </option>
-                                <option value="large">Large (16 oz)</option>
-                            </select>
-                            <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                        </div>
-                    </div><br />
-                    <div class="col-md-4">
-                        <div class="box">
-                            <img src="../assets/images/cart-item-9.png" alt="" class="product-img">
-                            <h3 class="product-title">Seasonal Origin </h3>
-                            <div class="price">₱80.00</div>
-                            <select class="form-select size-select mb-2">
-                                <option value="small">Small (8 oz)</option>
-                                <option value="medium" selected>Medium </option>
-                                <option value="large">Large (16 oz)</option>
-                            </select>
-                            <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                        </div>
-                    </div>
-                </div><br />
-                <div class="row row-to-hide">
-                    <div class="col-md-4">
-                        <div class="box">
-                            <img src="../assets/images/cart-item-10.png" alt="" class="product-img">
-                            <h3 class="product-title">Ethiopian Yirgacheffe Cup </h3>
-                            <div class="price">₱55.00</div>
-                            <select class="form-select size-select mb-2">
-                                <option value="small">Small (8 oz)</option>
-                                <option value="medium" selected>Medium </option>
-                                <option value="large">Large (16 oz)</option>
-                            </select>
-                            <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                        </div>
-                    </div><br />
-                    <div class="col-md-4">
-                        <div class="box">
-                            <img src="../assets/images/cart-item-11.png" alt="" class="product-img">
-                            <h3 class="product-title">Cold Brew Tonic In a Cup </h3>
-                            <div class="price">₱35.00</div>
-                            <select class="form-select size-select mb-2">
-                                <option value="small">Small (8 oz)</option>
-                                <option value="medium" selected>Medium </option>
-                                <option value="large">Large (16 oz)</option>
-                            </select>
-                            <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                        </div>
-                    </div><br />
-                    <div class="col-md-4">
-                        <div class="box">
-                            <img src="../assets/images/cart-item-12.png" alt="" class="product-img">
-                            <h3 class="product-title">Caramel Cold Foam Cold Brew </h3>
-                            <div class="price">₱55.00</div>
-                            <select class="form-select size-select mb-2">
-                                <option value="small">Small (8 oz)</option>
-                                <option value="medium" selected>Medium </option>
-                                <option value="large">Large (16 oz)</option>
-                            </select>
-                            <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                        </div>
-                    </div>
-                </div><br />
+
             </div>
         </div>
     </section>

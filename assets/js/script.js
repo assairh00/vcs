@@ -48,6 +48,10 @@ if (document.readyState == "loading") {
 
 // FUNCTIONS FOR CART
 function ready() {
+  // Load cart items from local storage on page load
+  loadCartFromLocalStorage();
+  updateTotal();
+
   // Remove Items from Cart
   var removeCartButtons = document.getElementsByClassName("cart-remove");
   for (var i = 0; i < removeCartButtons.length; i++) {
@@ -124,6 +128,9 @@ function buyButtonClicked() {
     cartContent.removeChild(cartContent.firstChild);
   }
   updateTotal();
+
+  // Clear local storage after checkout
+  localStorage.removeItem("cartItems");
 }
 
 // Function to generate invoice number
@@ -136,6 +143,7 @@ function removeCartItem(event) {
   var buttonClicked = event.target;
   buttonClicked.parentElement.remove();
   updateTotal();
+  saveCartToLocalStorage(); // Update local storage after removing item
 }
 
 // Function for "When quantity changes"
@@ -145,6 +153,7 @@ function quantityChanged(event) {
     input.value = 1;
   }
   updateTotal();
+  saveCartToLocalStorage(); // Update local storage after quantity change
 }
 
 // Add to Cart
@@ -187,6 +196,9 @@ function updatePrice(selectElement) {
       priceElement.textContent = "₱35.00";
     }
   }
+
+  updateTotal();
+  saveCartToLocalStorage(); // Update local storage after price update
 }
 
 function addCartClicked(button) {
@@ -231,6 +243,8 @@ function addProductToCart(title, price, productImg, size) {
   cartShopBox
     .getElementsByClassName("cart-quantity")[0]
     .addEventListener("change", quantityChanged);
+
+  saveCartToLocalStorage(); // Update local storage after adding item
 }
 
 // Update Total
@@ -248,4 +262,41 @@ function updateTotal() {
   }
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName("total-price")[0].innerText = "₱" + total;
+}
+
+function saveCartToLocalStorage() {
+  var cartContent = document.getElementsByClassName("cart-content")[0];
+  var cartBoxes = cartContent.getElementsByClassName("cart-box");
+  var cartItems = [];
+
+  for (var i = 0; i < cartBoxes.length; i++) {
+    var cartBox = cartBoxes[i];
+    var title =
+      cartBox.getElementsByClassName("cart-product-title")[0].innerText;
+    var price = cartBox.getElementsByClassName("cart-price")[0].innerText;
+    var size = cartBox
+      .getElementsByClassName("cart-sugar-option")[0]
+      .innerText.replace("Option: ", "");
+    var quantity = cartBox.getElementsByClassName("cart-quantity")[0].value;
+
+    cartItems.push({
+      title: title,
+      price: price,
+      size: size,
+      quantity: quantity,
+    });
+  }
+
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+}
+
+function loadCartFromLocalStorage() {
+  var cartItems = JSON.parse(localStorage.getItem("cartItems"));
+
+  if (cartItems) {
+    for (var i = 0; i < cartItems.length; i++) {
+      var item = cartItems[i];
+      addProductToCart(item.title, item.price, "", item.size);
+    }
+  }
 }

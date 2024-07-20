@@ -1,70 +1,67 @@
-body{
-    background-color: white;
-}
-
-header {
-    /* Ensure header has appropriate height or padding */
-    padding: 20px;
+/* Body and general styles */
+body {
+  background-color: #f2f2f2; /* Light gray background */
+  font-family: Arial, sans-serif; /* Choose a readable font */
+  font-size: 16px; /* Base font size */
+  line-height: 1.6; /* Improved readability */
+  margin: 0;
+  padding: 0;
 }
 
 .main-content {
-    padding-top: 150px; /* Add padding to create space below header */
+  padding-top: 20px; /* Adjusted padding from 150px to 20px */
+  padding-bottom: 50px; /* Add padding at the bottom */
 }
 
-.main-content .row {
-    margin-right: -15px; /* Adjust negative margin for row */
-    margin-left: -15px; /* Adjust negative margin for row */
+.product-details,
+.credit-card-form {
+  background-color: white; /* White background for clarity */
+  border: 1px solid #ddd; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Even padding */
+  margin-top: 20px; /* Spacing between sections */
+  text-align: center; /* Center align content */
 }
 
-.main-content .col-lg-6 {
-    padding-right: 15px; /* Adjust padding for columns */
-    padding-left: 15px; /* Adjust padding for columns */
+.product-details h2,
+.credit-card-form h2,
+.delivery-form h2 {
+  margin-top: 0; /* Remove top margin for first heading in sections */
+  margin-bottom: 20px; /* Bottom margin for headings */
+  font-size: 24px; /* Larger font size for headings */
 }
 
-.size-select {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
+.size-select,
+.delivery-form input,
+.credit-card-form input,
+.btn-buy,
+.btn-primary {
+  width: calc(
+    100% - 30px
+  ); /* Full width minus padding for inputs and buttons */
+  padding: 15px; /* Increased padding for better touch targets */
+  margin-bottom: 20px; /* Spacing between elements */
+  border-radius: 5px; /* Rounded corners for inputs and buttons */
+  border: 1px solid #ccc; /* Light border */
+  box-sizing: border-box; /* Include padding in width calculation */
+  font-size: 18px; /* Larger font size for inputs and buttons */
 }
 
 .payment-buttons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  justify-content: center; /* Center align buttons */
+  gap: 15px;
+  margin-top: 20px; /* Spacing above payment buttons */
 }
 
-.delivery-form {
-    margin-bottom: 20px;
+.payment-buttons a {
+  flex: 1; /* Distribute buttons evenly */
+  text-align: center; /* Center button text */
 }
 
-.payment-methods {
-    margin-top: 20px;
-}
-
-.size-select {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-.product-details {
-    background-color: #f8f9fa; /* Example background color */
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.credit-card-form {
-    background-color: #f8f9fa; /* Example background color */
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-.center-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Adjust as needed */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content .row {
+    flex-direction: column; /* Stack columns on small screens */
+  }
 }
