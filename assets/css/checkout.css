@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+:root {
+  --main-color: #9f5c44;
+  --second-color: #64342c;
+  --third-color: #644c2c;
+  --fourth-color: #392414;
+  --fifth-color: #1f232c;
+  --sixth-color: #e7a891;
+  --black: #13131a;
+  --bg: #000000;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
 /* Body and general styles */
 body {
   background-color: #f2f2f2; /* Light gray background */
@@ -6,13 +52,15 @@ body {
   line-height: 1.6; /* Improved readability */
   margin: 0;
   padding: 0;
+  display: flex; /* Enable flexbox layout */
+  min-height: 100vh; /* Minimum height of viewport */
+  flex-direction: column; /* Arrange children vertically */
+  padding-top: 150px; /* Ensure content starts below fixed header */
 }
 
 .header {
   background-color: var(--bg);
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1.5rem 7%;
   border-bottom: var(--border);
   position: fixed;
@@ -20,6 +68,12 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
+  display: -webkit-flex; /* Safari */
+  display: -ms-flexbox; /* IE 10 */
+  display: flex; /* Standard */
+  -webkit-box-pack: justify; /* Safari */
+  -ms-flex-pack: justify; /* IE 10 */
+  justify-content: space-between; /* Standard */
 }
 
 .img-logo {
@@ -125,8 +179,11 @@ body {
 }
 
 .main-content {
-  padding-top: 20px; /* Adjusted padding from 150px to 20px */
-  padding-bottom: 50px; /* Add padding at the bottom */
+  padding: 20px; /* Add padding around content */
+  flex: 1; /* Fill remaining vertical space */
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center children horizontally */
+  align-items: flex-start; /* Start from the top */
 }
 
 .product-details,
