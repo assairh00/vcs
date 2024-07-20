@@ -81,7 +81,6 @@ function ready() {
 
 // Function for "Buy Button Works"
 function buyButtonClicked() {
-  alert("Your order is placed! Thank you for buying and enjoy your coffee!");
   var cartContent = document.getElementsByClassName("cart-content")[0];
   var cartBoxes = cartContent.getElementsByClassName("cart-box");
   var orderDetails = [];
