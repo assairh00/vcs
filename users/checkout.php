@@ -32,33 +32,6 @@ session_start();
             <img src="../assets/images/logo.png" style="position: relative;" class="img-logo" alt="KapeTann Logo">
         </a>
 
-        <!-- MAIN MENU FOR SMALLER DEVICES -->
-        <nav class="navbar navbar-expand-lg">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a href="#home" class="text-decoration-none">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="text-decoration-none">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu" class="text-decoration-none">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="text-decoration-none">Contact</a>
-                </li>
-                <li class="nav-item">
-            <?php
-            if (isset($_SESSION['username'])) {
-                echo '<a href="../users/logout.php" class="text-decoration-none">Logout</a>';
-            } else {
-                echo '<a href="users/login.php" class="text-decoration-none">Login</a>';
-            }
-            ?>
-        </li>
-            </ul>
-        </nav>
-
         <!-- Icons for Cart and Menu -->
         <div class="icons">
             <div class="fas fa-shopping-cart" id="cart-btn" onclick="redirectCart()"></div>
