@@ -1,13 +1,6 @@
 <?php
-  session_start();
-
-  // Check if chosen product details are stored in session
-  if (isset($_SESSION['chosenProduct'])) {
-    $chosenProduct = json_decode($_SESSION['chosenProduct'], true); // Decode JSON string
-  } else {
-    // Handle the case where no product is chosen (optional: display message)
-    $chosenProduct = null;
-  }
+session_start();
+?>
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,8 +48,14 @@
                     <a href="#contact" class="text-decoration-none">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a href="users/login.php" class="text-decoration-none">Login</a>
-                </li>
+            <?php
+            if (isset($_SESSION['username'])) {
+                echo '<a href="../users/logout.php" class="text-decoration-none">Logout</a>';
+            } else {
+                echo '<a href="users/login.php" class="text-decoration-none">Login</a>';
+            }
+            ?>
+        </li>
             </ul>
         </nav>
 
