@@ -29,7 +29,7 @@ session_start();
     <!-- HEADER SECTION -->
     <header class="header">
         <a href="index.php" class="logo">
-            <img src="../assets/images/logo.png" style="position: relative;" class="img-logo" alt="KapeTann Logo">
+            <img src="../assets/images/cafe_logo1.png" style="position: relative;" class="img-logo" alt="KapeTann Logo">
         </a>
 
 

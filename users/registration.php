@@ -41,7 +41,7 @@
         ?>
             <form class="form" action="" method="post">
                 <center>
-                    <img src="../assets/images/logo.png" alt="" class="img img-fluid">
+                    <img src="../assets/images/cafe_logo1.png" alt="" class="img img-fluid">
                 </center>
                 <hr />
                 <h1 class="login-title">Registration</h1>
