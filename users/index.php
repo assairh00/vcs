@@ -371,7 +371,7 @@ include("auth_session.php");
         });
 
         // JavaScript function to redirect to checkout page with product details
-function redirectToCheckout(name, price, quantity) {
+function redirectToCheckout(title, price, quantity) {
     // Redirect to checkout.php and pass parameters in the URL
     window.location.href = 'checkout.php?name=' + encodeURIComponent(name) + '&price=' + encodeURIComponent(price) + '&quantity=' + encodeURIComponent(quantity);
 }
