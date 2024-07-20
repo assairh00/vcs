@@ -28,9 +28,10 @@ session_start();
 <body>
     <!-- HEADER SECTION -->
     <header class="header">
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../assets/images/logo.png" style="position: relative;" class="img-logo" alt="KapeTann Logo">
         </a>
+
 
         <!-- Icons for Cart and Menu -->
         <div class="icons">
