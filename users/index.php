@@ -125,7 +125,7 @@ include("auth_session.php");
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
                         </select>
-                        <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
+                        <a class="btn add-cart" onclick="addCartClicked(this)">Add to Cart</a>
                     </div>
                 </div>
                 <br />
@@ -180,7 +180,7 @@ include("auth_session.php");
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
                         </select>
-                        <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
+                        <a class="btn add-cart" onclick="addCartClicked(this)">Add to Cart</a>
                     </div>
                 </div><br />
                 <div class="col-md-4">
