@@ -205,7 +205,7 @@
       <section class="contact" id="contact">
             <h1 class="heading"><span>Contact</span> Us</h1>
             <div class="row">
-                <form name="contact" method="POST" action="#">
+                <form name="name" method="POST" action="">
                     <h3> Get in touch with us!</h3>
                     <div class="inputBox">
                         <span class="fas fa-envelope"></span>

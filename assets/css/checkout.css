@@ -378,6 +378,11 @@ body {
   font-size: 18px; /* Larger font size for inputs and buttons */
 }
 
+.card-icon {
+  font-size: 24px; /* Adjust icon size */
+  margin-left: 5px; /* Adjust spacing */
+}
+
 .payment-buttons {
   display: flex;
   justify-content: center; /* Center align buttons */
