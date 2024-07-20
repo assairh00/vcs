@@ -47,9 +47,6 @@ include("auth_session.php");
                     <a href="#menu" class="text-decoration-none">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="text-decoration-none">Contact</a>
-                </li>
-                <li class="nav-item">
                     <a href="logout.php" class="text-decoration-none">Logout</a>
                 </li>
             </ul>
@@ -285,71 +282,28 @@ include("auth_session.php");
                         </div>
                     </div>
                 </div><br />
-                <center>
-                    <button id="showHideBtn" class="btn btn-dark">SHOW MORE</button>
-                </center>
             </div>
         </div>
     </section>
-
-    <!-- CONTACT US SECTION -->
-    <section class="contact" id="contact">
-        <h1 class="heading"><span>Contact</span> Us</h1>
-        <div class="row">
-            <div id="map" class="map pull-left"></div>
-            <form name="contact" method="POST" action="https://formspree.io/f/xayzavgb">
-                <h3> Get in touch with us!</h3>
-                <div class="inputBox">
-                    <span class="fas fa-envelope"></span>
-                    <input type="email" name="email" placeholder="Email Address">
+        <!-- FOOTER SECTION -->
+        <section class="footer">
+            <div class="footer-container">
+                <div class="logo">
+                    <img src="../assets/images/logo.png" class="img"><br />
+                    <i class="fas fa-envelope"></i>
+                    <p>abfiguerrez18@gmail.com</p><br />
+                    <i class="fas fa-phone"></i>
+                    <p>+63 917-134-1422</p><br />
+                    <i class="fab fa-facebook-messenger"></i>
+                    <p>@kapetanncoffee</p><br />
                 </div>
-                <div class="inputBox">
-                    <textarea name="message" placeholder="Enter your message..."></textarea>
-                </div>
-                <button type="submit" class="btn">Contact Now</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER SECTION -->
-    <section class="footer">
-        <div class="footer-container">
-            <div class="logo">
-                <img src="../assets/images/logo.png" class="img"><br />
-                <i class="fas fa-envelope"></i>
-                <p>virtualcoffeeshop@gmail.com</p><br />
-                <i class="fas fa-phone"></i>
-                <p>+63 917-134-1422</p><br />
-                <i class="fab fa-facebook-messenger"></i>
-                <p>@VCS</p><br />
-            </div>
-            <div class="support">
-                <h2>Support</h2>
-                <br />
-                <a href="#">Contact Us</a>
-                <a href="#">Customer Service</a>
-                <a href="#">Chatbot Inquiry</a>
-                <a href="#">Submit a Ticket</a>
-            </div>
-            <div class="company">
-                <h2>Company</h2>
-                <br />
-                <a href="#">About Us</a>
-                <a href="#">Affiliates</a>
-                <a href="#">Resources</a>
-                <a href="#">Partnership</a>
-                <a href="#">Suppliers</a>
-            </div>
-            <div class="newsletters">
-                <h2>Newsletters</h2>
-                <br />
-                <p>Subscribe to our newsletter for news and updates!</p>
-                <div class="input-wrapper">
-                    <input type="email" class="newsletter" placeholder="Your email address">
-                    <i id="paper-plane-icon" class="fas fa-paper-plane"></i>
+                <div class="credit">
+                    <hr /><br/>
+                    <h2>KapeTann Brewed Coffee © 2023 | All Rights Reserved.</h2>
+                    <h2>Designed by <span>Algo Filipino</span> | Teravision</h2>
                 </div>
             </div>
-    </section>
+        </section>
 
 
     <!-- JS File Link -->
@@ -421,6 +375,8 @@ function redirectToCheckout(name, price, quantity) {
     // Redirect to checkout.php and pass parameters in the URL
     window.location.href = 'checkout.php?name=' + encodeURIComponent(name) + '&price=' + encodeURIComponent(price) + '&quantity=' + encodeURIComponent(quantity);
 }
+
+
     </script>
 </body>
 
