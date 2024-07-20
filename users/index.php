@@ -47,6 +47,10 @@ include("auth_session.php");
                     <a href="#menu" class="text-decoration-none">Menu</a>
                 </li>
                 <li class="nav-item">
+                <li class="nav-item">
+                            <a href="#contact" class="text-decoration-none">Contact</a>
+                        </li>
+
                     <a href="logout.php" class="text-decoration-none">Logout</a>
                 </li>
             </ul>
@@ -214,6 +218,26 @@ include("auth_session.php");
             </div>
         </div>
     </section>
+
+      <!-- CONTACT US SECTION -->
+      <section class="contact" id="contact">
+            <h1 class="heading"><span>Contact</span> Us</h1>
+            <div class="row">
+                <form name="contact" method="POST" action="#">
+                    <h3> Get in touch with us!</h3>
+                    <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="inputBox">
+                        <textarea name="message" placeholder="Enter your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Contact Now</button>
+                </form>
+            </div>
+        </section>
+
+
         <!-- FOOTER SECTION -->
         <section class="footer">
             <div class="footer-container">
@@ -228,18 +252,14 @@ include("auth_session.php");
                     <i class="fab fa-facebook-messenger"></i>
                     <p>@kapetanncoffee</p><br />
                 </div>
-                <div class="credit">
-                    <hr /><br/>
-                    <h2>KapeTann Brewed Coffee © 2023 | All Rights Reserved.</h2>
-                    <h2>Designed by <span>Algo Filipino</span> | Teravision</h2>
-                </div>
+              
             </div>
         </section>
 
 
     <!-- JS File Link -->
     <script src="../assets/js/googleSignIn.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script_logged.js"></script>
     <script src="../assets/js/cart.js"></script>
     <script src="../assets/js/responses.js"></script>
     <script src="../assets/js/convo.js"></script>

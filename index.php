@@ -93,203 +93,112 @@
                     <img src="assets/images/about-img.png" alt="" class="img-fluid">
                 </div>
                 <div class="content">
-                    <h3>Welcome to KapeTann!</h3>
+                    <h3>Welcome to your Virtual Coffee Shop</h3>
+
                     <p>
-                        At KapeTann Coffee Shop, we are passionate about coffee and believe
-                        that every cup tells a story. We are a cozy coffee shop located
-                        in the heart of the city, dedicated to providing an exceptional
-                        coffee experience to our customers. Our love for coffee has led
-                        us on a voyage of exploration and discovery, as we travel the
-                        world in search of the finest coffee beans, carefully roasted
-                        and brewed to perfection.
+                    In our virtual space, we aim to recreate the cozy, inviting atmosphere of a traditional coffee shop.
+                 Whether you're starting your day, taking a break, or connecting with friends, The Virtual Coffee Shop
+                 is your go-to destination for exceptional coffee and community. Join us in exploring the rich, 
+                 diverse world of coffee from the comfort of your own home.
                     </p>
-                    <p>
-                        But coffee is not just a drink, it's an experience. Our warm and
-                        inviting atmosphere at KapeTann is designed to be a haven
-                        for coffee lovers, where they can relax, connect, and embark
-                        on their own coffee voyages.
-                    </p>
-                    <a href="#" class="btn btn-dark text-decoration-none">Learn More</a>
+ 
                 </div>
             </div>
         </section>
 
         <!-- MENU SECTION -->
         <section class="menu" id="menu">
-            <h1 class="heading">Our <span>Menu</span></h1>
-            <div class="box-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-1.png" alt="" class="product-img">
-                                <h3 class="product-title">Americano - Hot Espresso  </h3>
-                                <div class="price">₱45.00</div>
-                                <select class="form-select size-select mb-2" id="product-size">
-    <option value="small" data-price="5.00">Small (8 oz) - $5.00</option>
-    <option value="medium" data-price="7.00" selected>Medium   - $7.00</option>
-    <option value="large" data-price="9.00">Large (16 oz) - $9.00</option>
-</select>
-<a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-2.png" alt="" class="product-img">
-                                <h3 class="product-title">Colombian Supremo Cup  </h3>
-                                <div class="price">₱40.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-3.png" alt="" class="product-img">
-                                <h3 class="product-title">Nitro Cold Brew w/ Straw  </h3>
-                                <div class="price">₱50.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div><br />
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-4.png" alt="" class="product-img">
-                                <h3 class="product-title">Seasonal Single-Origin  </h3>
-                                <div class="price">₱30.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-5.png" alt="" class="product-img">
-                                <h3 class="product-title">Indonesian Sumatra Mandheling  </h3>
-                                <div class="price">₱40.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-6.png" alt="" class="product-img">
-                                <h3 class="product-title">Mint Mojito Iced Coffee  </h3>
-                                <div class="price">₱55.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div><br />
-                    <div class="row row-to-hide">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-7.png" alt="" class="product-img">
-                                <h3 class="product-title">Iced Americano  </h3>
-                                <div class="price">₱35.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-8.png" alt="" class="product-img">
-                                <h3 class="product-title">Specialty Brews  </h3>
-                                <div class="price">₱85.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-9.png" alt="" class="product-img">
-                                <h3 class="product-title">Seasonal Origin  </h3>
-                                <div class="price">₱80.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div><br />
-                    <div class="row row-to-hide">
-                        <div class="col-md-4">
-                        <div class="box">
-                                <img src="assets/images/cart-item-10.png" alt="" class="product-img">
-                                <h3 class="product-title">Ethiopian Yirgacheffe Cup  </h3>
-                                <div class="price">₱55.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-11.png" alt="" class="product-img">
-                                <h3 class="product-title">Cold Brew Tonic In a Cup  </h3>
-                                <div class="price">₱35.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/cart-item-12.png" alt="" class="product-img">
-                                <h3 class="product-title">Caramel Cold Foam Cold Brew  </h3>
-                                <div class="price">₱55.00</div>
-                                <select class="form-select size-select mb-2">
-                                    <option value="small">Small (8 oz)</option>
-                                    <option value="medium" selected>Medium  </option>
-                                    <option value="large">Large (16 oz)</option>
-                                </select>
-                                <a class="btn add-cart" onclick="addToCart(this)">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div><br />
-                    <center>
-                        <button id="showHideBtn" class="btn btn-dark">SHOW MORE</button>
-                    </center> 
+    <h1 class="heading">Our <span>Menu</span></h1>
+    <div class="box-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/cart-item-1.png" alt="" class="product-img">
+                        <h3 class="product-title">Americano - Hot Espresso </h3>
+                        <div class="price">₱45.00</div>
+                        <select class="form-select size-select mb-2">
+                            <option value="Sugar Free" selected>Sugar-Free</option>
+                            <option value="Sugar">With Sugar</option>
+                        </select>
+                       <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/cart-item-2.png" alt="" class="product-img">
+                        <h3 class="product-title">Colombian Supremo Cup </h3>
+                        <div class="price">₱60.00</div>
+                        <select class="form-select size-select mb-2" onchange="updatePrice(this)">
+                            <option value="large" selected>Large</option>
+                            <option value="small">Small</option>
+                        </select>
+                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/cart-item-3.png" alt="" class="product-img">
+                        <h3 class="product-title">Nitro Cold Brew</h3>
+                        <div class="price">₱50.00</div>
+                        <select class="form-select size-select mb-2" onchange="updatePrice(this)">
+                            <option value="honey" selected>Honey</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="cinnamon">Cinnamon</option>
+                            <option value="classic">Classic</option>
+                        </select>
+                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                    </div>
+                </div>
+            </div><br />
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/cart-item-4.png" alt="" class="product-img">
+                        <h3 class="product-title">Seasonal Single-Origin </h3>
+                        <div class="price">₱30.00</div>
+                        <select class="form-select size-select mb-2" onchange="updatePrice(this)">
+                            <option value="brazilian" selected>Brazilian Java</option>
+                            <option value="mexican">Mexican Chiapas</option>
+                            <option value="guatemalan">Guatemalan Antigua</option>
+                        </select>
+                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                    </div>
+                </div><br />
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/cart-item-5.png" alt="" class="product-img">
+                        <h3 class="product-title">Indonesian Sumatra Mandheling </h3>
+                        <div class="price">₱40.00</div>
+                        <select class="form-select size-select mb-2">
+                            <option value="Sugar Free" selected>Sugar-Free</option>
+                            <option value="Sugar">With Sugar</option>
+                        </select>
+                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                    </div>
+                </div><br />
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/cart-item-6.png" alt="" class="product-img">
+                        <h3 class="product-title">Mint Mojito Iced Coffee </h3>
+                        <div class="price">₱55.00</div>
+                        <select class="form-select size-select mb-2" onchange="updatePrice(this)">
+                            <option value="large" selected>Large</option>
+                            <option value="small">Small</option>
+                        </select>
+                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+            </div>
+        </div>
+    </section>
 
       
         <!-- CONTACT US SECTION -->
@@ -352,8 +261,7 @@
         </section>
 
         <!-- JS File Link -->
-        <script src="assets/js/responses.js"></script>
-        <script src="assets/js/convo.js"></script>
+         <script src="assets/js/script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script>
@@ -363,48 +271,6 @@
                     form.reset();
                 }
             }
-
-            // CODE FOR THE GOOGLE MAPS API
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 14.99367271992383, lng: 120.17629231186626},
-                    zoom: 9
-                });
-
-                var marker = new google.maps.Marker({
-                    position: {lat: 14.99367271992383, lng: 120.17629231186626},
-                    map: map,
-                    title: 'Your Location'
-                });
-            }
-
-            // CODE FOR THE SHOW MORE & SHOW LESS BUTTON IN MENU
-            $(document).ready(function() {
-                $(".row-to-hide").hide();
-                $("#showHideBtn").text("SHOW MORE");
-                $("#showHideBtn").click(function() {
-                    $(".row-to-hide").toggle();
-                    if ($(".row-to-hide").is(":visible")) {
-                        $(this).text("SHOW LESS");
-                    } else {
-                        $(this).text("SHOW MORE");
-                    }
-                });
-            });
-
-            // CODE FOR THE SHOW MORE & SHOW LESS BUTTON IN GALLERY
-            $(document).ready(function() {
-                $(".pic-to-hide").hide();
-                $("#showBtn").text("SHOW MORE");
-                $("#showBtn").click(function() {
-                    $(".pic-to-hide").toggle();
-                    if ($(".pic-to-hide").is(":visible")) {
-                        $(this).text("SHOW LESS");
-                    } else {
-                        $(this).text("SHOW MORE");
-                    }
-                });
-            });
 
             // CODE FOR THE REDIRECT CART
             function redirectCart() {
