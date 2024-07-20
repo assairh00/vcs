@@ -238,25 +238,6 @@ include("auth_session.php");
         </section>
 
 
-        <!-- FOOTER SECTION -->
-        <section class="footer">
-            <div class="footer-container">
-                <div class="logo">
-                    <img src="../assets/images/cafe_logo1.png" class="img"><br />
-                </div>
-                <div class="footer-text">
-                    <i class="fas fa-envelope"></i>
-                    <p>abfiguerrez18@gmail.com</p><br />
-                    <i class="fas fa-phone"></i>
-                    <p>+63 917-134-1422</p><br />
-                    <i class="fab fa-facebook-messenger"></i>
-                    <p>@kapetanncoffee</p><br />
-                </div>
-              
-            </div>
-        </section>
-
-
     <!-- JS File Link -->
     <script src="../assets/js/googleSignIn.js"></script>
     <script src="../assets/js/script_logged.js"></script>
@@ -266,32 +247,6 @@ include("auth_session.php");
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>
-        // CODE FOR THE FORMSPREE
-        window.onbeforeunload = () => {
-            for (const form of document.getElementsByTagName('form')) {
-                form.reset();
-            }
-        }
-
-        // CODE FOR THE GOOGLE MAPS API
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: 14.99367271992383,
-                    lng: 120.17629231186626
-                },
-                zoom: 9
-            });
-
-            var marker = new google.maps.Marker({
-                position: {
-                    lat: 14.99367271992383,
-                    lng: 120.17629231186626
-                },
-                map: map,
-                title: 'Your Location'
-            });
-        }
 
         // CODE FOR THE SHOW MORE & SHOW LESS BUTTON IN MENU
         $(document).ready(function() {

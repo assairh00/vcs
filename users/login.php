@@ -47,23 +47,6 @@
                 <p class="link">Don't have an account? <a href="registration.php">Register here!</a></p>
                 <hr />
 
-                <div id="g_id_onload"
-                    data-client_id="838321752460-6ah497tdpkbekj7lfj5so48suaqhu1e7.apps.googleusercontent.com"
-                    data-context="signin"
-                    data-ux_mode="popup"
-                    data-login_uri="https://kapetanncoffeeshop.infinityfreeapp.com"
-                    data-auto_prompt="false">
-                </div>
-
-                <div class="g_id_signin"
-                    data-type="standard"
-                    data-shape="rectangular"
-                    data-theme="outline"
-                    data-text="signin_with"
-                    data-size="large"
-                    data-logo_alignment="center"
-                    data-callback="onSignIn">
-                </div>
         </form>
         <?php
             }

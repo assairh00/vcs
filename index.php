@@ -121,7 +121,7 @@
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
                         </select>
-                       <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                       <a class="btn add-cart" href="http://localhost/vcs1/users/login.php">Add to Cart</a>
                     </div>
                 </div>
                 <br />
@@ -134,7 +134,7 @@
                             <option value="large" selected>Large</option>
                             <option value="small">Small</option>
                         </select>
-                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                        <a class="btn add-cart" href="http://localhost/vcs1/users/login.php">Add to Cart</a>
                     </div>
                 </div>
                 <br />
@@ -149,7 +149,7 @@
                             <option value="cinnamon">Cinnamon</option>
                             <option value="classic">Classic</option>
                         </select>
-                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                        <a class="btn add-cart" href="http://localhost/vcs1/users/login.php">Add to Cart</a>
                     </div>
                 </div>
             </div><br />
@@ -164,7 +164,7 @@
                             <option value="mexican">Mexican Chiapas</option>
                             <option value="guatemalan">Guatemalan Antigua</option>
                         </select>
-                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                        <a class="btn add-cart" href="http://localhost/vcs1/users/login.php">Add to Cart</a>
                     </div>
                 </div><br />
                 <div class="col-md-4">
@@ -176,7 +176,7 @@
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
                         </select>
-                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                        <a class="btn add-cart" href="http://localhost/vcs1/users/login.php">Add to Cart</a>
                     </div>
                 </div><br />
                 <div class="col-md-4">
@@ -188,7 +188,7 @@
                             <option value="large" selected>Large</option>
                             <option value="small">Small</option>
                         </select>
-                        <a class="btn add-cart" href="http://localhost/vcs/users/login.php">Add to Cart</a>
+                        <a class="btn add-cart" href="http://localhost/vcs1/users/login.php">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -201,12 +201,11 @@
     </section>
 
       
-        <!-- CONTACT US SECTION -->
-        <section class="contact" id="contact">
+         <!-- CONTACT US SECTION -->
+      <section class="contact" id="contact">
             <h1 class="heading"><span>Contact</span> Us</h1>
             <div class="row">
-                <div id="map" class="map pull-left"></div>
-                <form name="contact" method="POST" action="https://formspree.io/f/xayzavgb">
+                <form name="contact" method="POST" action="#">
                     <h3> Get in touch with us!</h3>
                     <div class="inputBox">
                         <span class="fas fa-envelope"></span>
@@ -220,45 +219,6 @@
             </div>
         </section>
 
-        <!-- FOOTER SECTION -->
-        <section class="footer">
-            <div class="footer-container">
-                <div class="logo">
-                    <img src="assets/images/cafe_logo1.png" class="img"><br />
-                    <i class="fas fa-envelope"></i>
-                    <p>abfiguerrez18@gmail.com</p><br />
-                    <i class="fas fa-phone"></i>
-                    <p>+63 917-134-1422</p><br />
-                    <i class="fab fa-facebook-messenger"></i>
-                    <p>@kapetanncoffee</p><br />
-                </div>
-                <div class="support">
-                    <h2>Support</h2>
-                    <br /> 
-                    <a href="#">Contact Us</a>
-                    <a href="#">Customer Service</a>
-                    <a href="#">Chatbot Inquiry</a>
-                    <a href="#">Submit a Ticket</a>
-                </div>
-                <div class="company">
-                    <h2>Company</h2>
-                    <br /> 
-                    <a href="#">About Us</a>
-                    <a href="#">Affiliates</a>
-                    <a href="#">Resources</a>
-                    <a href="#">Partnership</a>
-                    <a href="#">Suppliers</a>
-                </div>
-                <div class="newsletters">
-                    <h2>Newsletters</h2>
-                    <br /> 
-                    <p>Subscribe to our newsletter for news and updates!</p>
-                    <div class="input-wrapper">
-                        <input type="email" class="newsletter" placeholder="Your email address">
-                        <i id="paper-plane-icon" class="fas fa-paper-plane"></i>
-                    </div>
-                </div>
-        </section>
 
         <!-- JS File Link -->
          <script src="assets/js/script.js"></script>
