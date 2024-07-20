@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-        <title>KapeTann Brewed Coffee Shop</title>
+        <title>Virtual Coffee Shop</title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -70,7 +70,7 @@
                 </div>
                 <div class="total">
                     <div class="total-title">Total: </div>
-                    <div class="total-price">₱0</div>
+                    <div class="total-price">0dh</div>
                 </div>
                 <!-- BUY BUTTON -->
                 <button type="button" class="btn-buy">Checkout Now</button>
@@ -116,7 +116,7 @@
                     <div class="box">
                         <img src="assets/images/cart-item-1.png" alt="" class="product-img">
                         <h3 class="product-title">Americano - Hot Espresso </h3>
-                        <div class="price">₱45.00</div>
+                        <div class="price">45.00 dh</div>
                         <select class="form-select size-select mb-2">
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
@@ -129,7 +129,7 @@
                     <div class="box">
                         <img src="assets/images/cart-item-2.png" alt="" class="product-img">
                         <h3 class="product-title">Colombian Supremo Cup </h3>
-                        <div class="price">₱60.00</div>
+                        <div class="price">60.00 dh</div>
                         <select class="form-select size-select mb-2" onchange="updatePrice(this)">
                             <option value="large" selected>Large</option>
                             <option value="small">Small</option>
@@ -142,7 +142,7 @@
                     <div class="box">
                         <img src="assets/images/cart-item-3.png" alt="" class="product-img">
                         <h3 class="product-title">Nitro Cold Brew</h3>
-                        <div class="price">₱50.00</div>
+                        <div class="price">50.00 dh</div>
                         <select class="form-select size-select mb-2" onchange="updatePrice(this)">
                             <option value="honey" selected>Honey</option>
                             <option value="vanilla">Vanilla</option>
@@ -158,7 +158,7 @@
                     <div class="box">
                         <img src="assets/images/cart-item-4.png" alt="" class="product-img">
                         <h3 class="product-title">Seasonal Single-Origin </h3>
-                        <div class="price">₱30.00</div>
+                        <div class="price">30.00 dh</div>
                         <select class="form-select size-select mb-2" onchange="updatePrice(this)">
                             <option value="brazilian" selected>Brazilian Java</option>
                             <option value="mexican">Mexican Chiapas</option>
@@ -171,7 +171,7 @@
                     <div class="box">
                         <img src="assets/images/cart-item-5.png" alt="" class="product-img">
                         <h3 class="product-title">Indonesian Sumatra Mandheling </h3>
-                        <div class="price">₱40.00</div>
+                        <div class="price">40.00 dh</div>
                         <select class="form-select size-select mb-2">
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
@@ -183,7 +183,7 @@
                     <div class="box">
                         <img src="assets/images/cart-item-6.png" alt="" class="product-img">
                         <h3 class="product-title">Mint Mojito Iced Coffee </h3>
-                        <div class="price">₱55.00</div>
+                        <div class="price">55.00 dh</div>
                         <select class="form-select size-select mb-2" onchange="updatePrice(this)">
                             <option value="large" selected>Large</option>
                             <option value="small">Small</option>

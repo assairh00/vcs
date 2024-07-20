@@ -32,33 +32,33 @@ function updatePrice(selectElement) {
 
   if (productTitle === "Colombian Supremo Cup") {
     if (selectedOption === "large") {
-      priceElement.textContent = "₱60.00";
+      priceElement.textContent = "60.00 dh";
     } else {
-      priceElement.textContent = "₱40.00";
+      priceElement.textContent = "40.00 dh";
     }
   } else if (productTitle === "Nitro Cold Brew") {
     if (selectedOption === "honey") {
-      priceElement.textContent = "₱50.00";
+      priceElement.textContent = "50.00 dh";
     } else if (selectedOption === "vanilla") {
-      priceElement.textContent = "₱40.00";
+      priceElement.textContent = "40.00 dh";
     } else if (selectedOption === "cinnamon") {
-      priceElement.textContent = "₱45.00";
+      priceElement.textContent = "45.00 dh";
     } else if (selectedOption === "classic") {
-      priceElement.textContent = "₱30.00";
+      priceElement.textContent = "30.00 dh";
     }
   } else if (productTitle === "Seasonal Single-Origin") {
     if (selectedOption === "brazilian") {
-      priceElement.textContent = "₱30.00";
+      priceElement.textContent = "30.00 dh";
     } else if (selectedOption === "mexican") {
-      priceElement.textContent = "₱27.00";
+      priceElement.textContent = "27.00 dh";
     } else if (selectedOption === "guatemalan") {
-      priceElement.textContent = "₱25.00";
+      priceElement.textContent = "25.00 dh";
     }
   } else if (productTitle === "Mint Mojito Iced Coffee") {
     if (selectedOption === "large") {
-      priceElement.textContent = "₱55.00";
+      priceElement.textContent = "55.00 dh";
     } else {
-      priceElement.textContent = "₱35.00";
+      priceElement.textContent = "35.00 dh";
     }
   }
 
@@ -121,12 +121,12 @@ function updateTotal() {
     var cartBox = cartBoxes[i];
     var priceElement = cartBox.getElementsByClassName("cart-price")[0];
     var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
-    var price = parseFloat(priceElement.innerText.replace("₱", ""));
+    var price = parseFloat(priceElement.innerText.replace("dh", ""));
     var quantity = quantityElement.value;
     total = total + price * quantity;
   }
   total = Math.round(total * 100) / 100;
-  document.getElementsByClassName("total-price")[0].innerText = "₱" + total;
+  document.getElementsByClassName("total-price")[0].innerText = total + "dh";
 }
 
 function saveCartToLocalStorage() {
