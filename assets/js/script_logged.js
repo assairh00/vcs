@@ -166,17 +166,17 @@ function updatePrice(selectElement) {
 
   if (productTitle === "Colombian Supremo Cup") {
     if (selectedOption === "large") {
-      priceElement.textContent = "60.00 dh";
+      priceElement.textContent = "25.00 dh";
     } else {
-      priceElement.textContent = "40.00 dh";
+      priceElement.textContent = "20.00 dh";
     }
   } else if (productTitle === "Nitro Cold Brew") {
     if (selectedOption === "honey") {
-      priceElement.textContent = "50.00 dh";
+      priceElement.textContent = "30.00 dh";
     } else if (selectedOption === "vanilla") {
-      priceElement.textContent = "40.00 dh";
+      priceElement.textContent = "35.00 dh";
     } else if (selectedOption === "cinnamon") {
-      priceElement.textContent = "45.00 dh";
+      priceElement.textContent = "32.00 dh";
     } else if (selectedOption === "classic") {
       priceElement.textContent = "30.00 dh";
     }
@@ -190,9 +190,9 @@ function updatePrice(selectElement) {
     }
   } else if (productTitle === "Mint Mojito Iced Coffee") {
     if (selectedOption === "large") {
-      priceElement.textContent = "55.00 dh";
+      priceElement.textContent = "28.00 dh";
     } else {
-      priceElement.textContent = "35.00 dh";
+      priceElement.textContent = "25.00 dh";
     }
   }
 

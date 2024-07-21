@@ -135,7 +135,7 @@ include("auth_session.php");
                     <div class="box">
                         <img src="../assets/images/cart-item-1.png" alt="" class="product-img">
                         <h3 class="product-title">Americano - Hot Espresso </h3>
-                        <div class="price">45.00 dh</div>
+                        <div class="price">10.00 dh</div>
                         <select class="form-select size-select mb-2">
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
@@ -148,7 +148,7 @@ include("auth_session.php");
                     <div class="box">
                         <img src="../assets/images/cart-item-2.png" alt="" class="product-img">
                         <h3 class="product-title">Colombian Supremo Cup </h3>
-                        <div class="price">60.00 dh</div>
+                        <div class="price">20.00 dh</div>
                         <select class="form-select size-select mb-2" onchange="updatePrice(this)">
                             <option value="large" selected>Large</option>
                             <option value="small">Small</option>
@@ -161,7 +161,7 @@ include("auth_session.php");
                     <div class="box">
                         <img src="../assets/images/cart-item-3.png" alt="" class="product-img">
                         <h3 class="product-title">Nitro Cold Brew</h3>
-                        <div class="price">50.00 dh</div>
+                        <div class="price">35.00 dh</div>
                         <select class="form-select size-select mb-2" onchange="updatePrice(this)">
                             <option value="honey" selected>Honey</option>
                             <option value="vanilla">Vanilla</option>
@@ -190,7 +190,7 @@ include("auth_session.php");
                     <div class="box">
                         <img src="../assets/images/cart-item-5.png" alt="" class="product-img">
                         <h3 class="product-title">Indonesian Sumatra Mandheling </h3>
-                        <div class="price">40.00 dh</div>
+                        <div class="price">30.00 dh</div>
                         <select class="form-select size-select mb-2">
                             <option value="Sugar Free" selected>Sugar-Free</option>
                             <option value="Sugar">With Sugar</option>
@@ -202,7 +202,7 @@ include("auth_session.php");
                     <div class="box">
                         <img src="../assets/images/cart-item-6.png" alt="" class="product-img">
                         <h3 class="product-title">Mint Mojito Iced Coffee </h3>
-                        <div class="price">55.00 dh</div>
+                        <div class="price">25.00 dh</div>
                         <select class="form-select size-select mb-2" onchange="updatePrice(this)">
                             <option value="large" selected>Large</option>
                             <option value="small">Small</option>
